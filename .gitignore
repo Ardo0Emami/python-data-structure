@@ -14,3 +14,12 @@ venv/
 .idea/
 .coverage
 htmlcov/
+__pycache__/
+*.pyc
+.mypy_cache/
+.venv/
+venv/
+.vscode/
+.idea/
+.coverage
+htmlcov/
