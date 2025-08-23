@@ -1,7 +1,6 @@
 import unittest
 from doubly_linked_list import DoublyLinkedList
 
-
 class TestDoublyLinkedList(unittest.TestCase):
     def test_add_front_and_len(self) -> None:
         dll = DoublyLinkedList[int]()
