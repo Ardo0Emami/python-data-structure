@@ -69,6 +69,33 @@ print(q.peek())     # 10
 print(q.dequeue())  # 10
 print(q.dequeue())  # 20
 print(q.is_empty()) # True
+```
+
+---
+
+---
+
+## LinkedList
+- Generic, type-safe singly linked list
+- Methods: `add_front`, `add_back`, `find`, `remove`
+- Supports: `len()`, `in`, `iter()`, `repr()`
+- Fully tested with `unittest`
+- Type-checked with `mypy`
+- Style-checked with `flake8`
+
+### Example
+```python
+from linked_list import LinkedList
+
+ll = LinkedList[int]()
+ll.add_back(1)
+ll.add_back(2)
+ll.add_back(3)
+
+print(list(ll))     # [1, 2, 3]
+print(ll.find(2))   # Node(2)
+ll.remove(2)
+print(2 in ll)      # False
 
 
 ```
