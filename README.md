@@ -48,6 +48,33 @@ print(list(lst))  # [1, 2, 3]
 
 ---
 
+## Queue
+- Generic, type-safe FIFO queue
+- Methods: `enqueue`, `dequeue`, `peek`, `is_empty`
+- Supports: `len()`, `repr()`
+- Raises `IndexError` on invalid `dequeue` or `peek`
+- Fully tested with `unittest`
+- Type-checked with `mypy`
+- Style-checked with `flake8`
+
+### Example
+```python
+from queue import Queue
+
+q = Queue[int]()
+q.enqueue(10)
+q.enqueue(20)
+
+print(q.peek())     # 10
+print(q.dequeue())  # 10
+print(q.dequeue())  # 20
+print(q.is_empty()) # True
+
+
+```
+
+---
+
 ## DoublyLinkedList
 - Generic, type-safe doubly linked list
 - Methods: `add_front`, `add_back`, `find`, `remove`
