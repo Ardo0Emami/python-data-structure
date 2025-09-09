@@ -42,5 +42,33 @@ lst.add(3)
 lst.add(1)
 lst.add(2)
 print(list(lst))  # [1, 2, 3]
+---
+
+```
+
+---
+
+## DoublyLinkedList
+- Generic, type-safe doubly linked list
+- Methods: `add_front`, `add_back`, `find`, `remove`
+- Supports: `len()`, `in`, `iter()`, `repr()`
+- Fully tested with `unittest`
+- Type-checked with `mypy`
+- Style-checked with `flake8`
+
+### Example
+```python
+from doubly_linked_list import DoublyLinkedList
+
+dll = DoublyLinkedList[int]()
+dll.add_back(1)
+dll.add_back(2)
+dll.add_back(3)
+
+print(list(dll))      # [1, 2, 3]
+print(dll.find(2))    # DoublyNode(2)
+dll.remove(2)
+print(2 in dll)       # False
+
 ```
 
